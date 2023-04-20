@@ -1,0 +1,338 @@
+body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.head-main {
+    display: flex;
+    /* width: 100%; */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    /* height: 60px; */
+}
+
+.head-yt-logo {
+    display: flex;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.head-yt-logo img {
+    margin-left: 1.4rem;
+}
+
+.user-icon {
+    height: 2rem;
+    cursor: pointer;
+    margin-right: 2px;
+}
+.bell-icon{
+    padding-left: 25px;
+    padding-right: 15px;
+}
+.video-icon{
+    padding-right: 15px;
+}
+
+.search {
+    width: 80%;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 190px;
+}
+
+.search input {
+    width: 50%;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    /* border: 2px solid black; */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    /* border-radius: 10% 0 0 10%; */
+
+}
+
+.search button {
+    font-size: 1rem;
+    padding: 0.4rem;
+    cursor: pointer;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* sidebar style */
+.body {
+    display: flex;
+    position: relative;
+    top: 60px;
+}
+
+ul {
+    list-style: none;
+    cursor: pointer;
+}
+
+.sidbar {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding-right: 2.2rem;
+    padding-left: 0.5rem;
+    width: 300px;
+    /* padding-top: 100px; */
+}
+/* ----------sidebar icons--------- */
+/* .first-sidebar li{
+    font-weight: bold;
+} */
+.Link1{
+    text-decoration: none;
+}
+ul li{
+    margin: 5px;
+}
+.homeicon img{
+    height: 23px;
+}
+
+/* --------------------------------- */
+
+.buttons {
+    position: relative;
+    /* top: 15px; */
+    padding: 10px;
+    margin: 8px;
+    background: rgb(242, 241, 241);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    flex-wrap: wrap;
+    color: black;
+}
+
+
+
+.button-list {
+    display: flex;
+}
+
+
+/* --------------------------------------------- */
+.video-card {
+    width: 330px;
+    height: 320px;
+    padding-left: 16px;
+    padding-top: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+.video-card img{
+    border-radius: 12px;
+}
+.video-card:hover{
+    scale: 1.08;
+     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+}
+
+.bold {
+    font-weight: bold;
+
+}
+
+.list {
+    padding-left: 8px;
+}
+
+.videoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    /* cursor: pointer; */
+}
+
+/* -------------------------------------------------- */
+.iframe {
+    padding: 15px;
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    
+
+}
+
+.iframe iframe {
+    height: 500px;
+    width: 900px;
+    border-radius: 25px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.searchSuggestion {
+    box-sizing: border-box;
+    width: 475px;
+    position: fixed;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.searchSuggestion li {
+    padding: 2px 0;
+    margin-left: 15px;
+    list-style: none;
+}
+
+.searchSuggestion li:hover {
+    background-color: rgb(243, 245, 246);
+    cursor: pointer;
+}
+
+.margin {
+    all: unset;
+}
+
+/* commets--------------- */
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    padding: 5px;
+
+    /* width: fit-content;
+    border: 2px solid yellow; */
+}
+
+.commentCard {
+    display: flex;
+  
+    align-items: center;
+    background-color: rgb(234, 237, 236);
+    margin: 7px;
+    
+    /* margin: 15px; */
+
+}
+
+.mainComments {
+    /* margin: 5px; */
+    margin-left: 15px;
+
+}
+
+.commentCard img {
+    height: 30px;
+}
+
+.commentCard p {
+    all: unset;
+}
+
+.commentList {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.nestedComment {
+    padding-left: 30px;
+    border-left: 2px solid black;
+}
+
+/* ----------------LIVE CHAT ---------------------- */
+.liveChat-1 {
+    padding: 5px;
+    margin: 8px;
+    border: 1px solid black;
+    background: rgba(191, 236, 240, 0.899);
+    width: 65px;
+    border-radius: 10px;
+}
+
+.liveChat-2 {
+
+    border: 1px solid black;
+    width: 30vw;
+    /* margin-left: 15px; */
+    margin-right: 40px;
+    margin-left: 7px;
+    border-radius: 10px;
+
+}
+
+.liveChat {
+    margin: 8px;
+    overflow-y: scroll;
+    height: 480px;
+    display: flex;
+    flex-direction: column-reverse;
+   
+    
+    /* width: 400px; */
+
+   
+   
+}
+/* .liveChat ::-webkit-scrollbar{
+    width: 5px;
+    color: red;
+} */
+
+.liveChat img {
+    border-radius: 50%;
+}
+
+.chatflex {
+    display: flex;
+    align-items: center;
+    background-color: rgb(198, 241, 241);
+    border-radius: 15px;
+    margin-top: 3px;
+}
+
+.span1 {
+    padding: 12px;
+    font-weight: bolder;
+    color: grey;
+}
+.commentInput{
+    width: 500px;
+}
+.commentWrapper{
+    width: 30vw;
+    
+}
+.commentInput input{
+    width: 22vw;
+    height: 24px;
+    margin: 8px;
+    /* border-radius: 20px; */
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.commentInput button{
+   
+    /* height: 29px; */
+    margin-left: -9px;
+    padding:6px;
+    background-color: rgb(48, 180, 136);
+    /* border: none; */
+    width:60px;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
